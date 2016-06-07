@@ -5,26 +5,30 @@
     <title>Timestamp Microservice</title>
 </head>
 <body>
+    <h1>Timestamp Microservice API</h1>
     <div class="content">
-        <h1>Timestamp Microservice API</h1>
         <section class="usage">
             <h3>Usage:</h3>
-            1. Pass in a date as a string parameter in the URL.  It will check to see whether that string contains either a unix timestamp or a natural language date.<br>
-            2. If the string is a valid date or Unix timestamp, it will return both the Unix timestamp and the natural language form of that date.<br>
-            3. If the string is not a valid date or Unix timestamp, it will return null for those properties.
+            <ol>
+                <li>Pass in a date as a string parameter in the URL.  It will check to see whether that string contains either a unix timestamp or a natural language date.</li>
+                <li>If the string is a valid date or Unix timestamp, it will return both the Unix timestamp and the natural language form of that date.</li>
+                <li>If the string is not a valid date or Unix timestamp, it will return null for those properties.</li>
+            </ol>
         </section>
         <section class="example-usage">
             <h3>Example Usage:</h3>
-            <p class="sample">
-                http://timestamp-ytv.herokuapp.com/1467844008<br>
-                http://timestamp-ytv.herokuapp.com/June 6, 2016<br>
-                http://timestamp-ytv.herokuapp.com/Jun 6 16<br>
-                http://timestamp-ytv.herokuapp.com/6 6 16<br>
-            </p>
+            <ul>
+                <li>http://timestamp-ytv.herokuapp.com/1467844008</li>
+                <li>http://timestamp-ytv.herokuapp.com/June 6, 2016</li>
+                <li>http://timestamp-ytv.herokuapp.com/Jun 6 16</li>
+                <li>http://timestamp-ytv.herokuapp.com/6 6 16</li>
+            </ul>
         </section>
         <section class="example-output">
             <h3>Example Output:</h3>
-            <p class="sample">{"unix":1467844008,"natural":"June 6, 2016"}<p>
+            <ul>
+                <li>{"unix":1467844008,"natural":"June 6, 2016"}</li>
+            </ul>
         </section>
     </div>
 
