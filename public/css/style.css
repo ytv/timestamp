@@ -4,16 +4,20 @@ html {
 
 body {
     font: 18px Arial;
-    margin: 0 15%;
+    margin: 0 5%;
     height: 100%;
 }
 
 .content {
     padding: 3%;
-    background-color: #eee;
+    background-color: #eeeef6;
     height: 100%;
 }
 
-.example {
+section {
+    margin-bottom: 20px;
+}
+
+.sample {
     color: #0000ff;
 }
