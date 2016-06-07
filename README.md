@@ -25,9 +25,7 @@ http://timestamp-ytv.herokuapp.com/6 6 16
 
 ## See it Live
 
-```
-[http://timestamp-ytv.herokuapp.com/](http://timestamp-ytv.herokuapp.com/)
-```
+[http://timestamp-ytv.herokuapp.com](http://timestamp-ytv.herokuapp.com)
 
 ## Launch
 
