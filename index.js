@@ -18,25 +18,29 @@ app.get('/favicon.ico', function(req, res) {
 
 app.get('/:date', function (req, res) {
 
-    var date = req.params.date;
-    var output = {unix: null, natural: null};
+    var date = req.params.date,
+        unix = null,
+        natural = null;
 
     // If 'date' is a number
     if(!isNaN(date)) {
         // Convert to milliseconds (assumes given unix timestamp is in seconds)
-        output.unix = Number(date);
-        output.natural = tools.getNaturalDate(date);
+        unix = Number(date);
+        natural = tools.getNaturalDate(date);
     }
     else {
         date = tools.parse(date);
         if(date) {
-            output.natural = date.natural;
-            output.unix = Number(tools.getUnixDate(date.month, date.date, date.year));
+            natural = date.natural;
+            unix = Number(tools.getUnixDate(date.month, date.date, date.year));
         }
     }
-    res.send(output);
+    res.json({
+        'unix': unix,
+        'natural': natural
+    });
 });
 
 app.listen(port, function () {
-    console.log('App is running locally on http://localhost: ' + port + '.');
+    console.log('Server listening on port ' + port);
 });
