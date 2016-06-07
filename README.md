@@ -4,7 +4,7 @@ This Timestamp Microservice API takes a date passed in as a string parameter in 
 
 Frameworks used: Node.js, Express.js
 
-### Usage
+## Usage
 
 #### Example Usage
 
@@ -23,12 +23,12 @@ http://timestamp-ytv.herokuapp.com/6 6 16
 }
 ```
 
-### See it Live
+## See it Live
 
 ```
 [http://timestamp-ytv.herokuapp.com/](http://timestamp-ytv.herokuapp.com/)
 ```
 
-### Launch
+## Launch
 
 Launch this project with node `index.js`.
