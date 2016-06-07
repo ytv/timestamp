@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Timestamp Microservice</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Timestamp Microservice API</h1>
+        <p><h3>Usage:</h3>
+
+            1. Pass in a date as a string parameter in the URL.  It will check to see whether that string contains either a unix timestamp or a natural language date.<br>
+            2. If the string is a valid date or Unix timestamp, it will return both the Unix timestamp and the natural language form of that date.<br>
+            3. If the string is not a valid date or Unix timestamp, it will return null for those properties.
+        </p>
+        <p>
+            <h3>Example Usage:</h3>
+            <p class="example">&lt;url&gt;/1467844008<br>
+            &lt;url&gt;/June 6, 2016<br>
+            &lt;url&gt;/Jun 6 16<br></p>
+        </p>
+        <p>
+            <h3>Example Output:</h3>
+            <p class="example">{"unix":1467844008,"natural":"June 6, 2016"}<p>
+        </p>
+    </div>
+
+
+</body>
