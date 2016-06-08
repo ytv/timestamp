@@ -1,5 +1,3 @@
-var tools = require('./scripts/helper/dateTools');
-var path = require('path');
 var express = require('express');
 var app = express();
 
