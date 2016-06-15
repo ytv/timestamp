@@ -19,6 +19,7 @@ ul {
 
 li {
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 ul li {
